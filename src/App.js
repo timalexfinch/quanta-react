@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Lorem from 'react-lorem-component';
+import MyTable from './MyTable.js';
+import Form from './Form.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+    state = {
+        characters: [],
+    }
+
+    removeCharacter = index => {
+        const { characters } = this.state
+
+        this.setState({
+            characters: characters.filter((character, i) => {
+                return i !== index
+            }),
+        })
+    }
+
+    handleSubmit = character => {
+        this.setState({ characters: [...this.state.characters, character] })
+    }
+
+    render() {
+        const { characters } = this.state;
+
+        return (
+            <div>
+                <h1>React with React-Bootstrap Demo</h1>
+                <br />
+                <p>Add a character with a name and a job to the table.</p>
+                <MyTable characterData={characters}
+                    removeCharacter={this.removeCharacter} />
+                <br />
+                <h3>Add New Character</h3>
+                <Form handleSubmit={this.handleSubmit} />
+                <br />
+                <Lorem count="1" />
+                <Lorem mode="list" />
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
