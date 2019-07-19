@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is the app where you can add people and their job titles to a web pagenpm update lodash --save
+
+
 ## Available Scripts
 
 In the project directory, you can run:
