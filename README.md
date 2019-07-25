@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<<<<<<< HEAD
 This is the app where you can add people and their job titles to a web pagenpm update lodash --save
 
 
@@ -69,3 +70,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+This is the app that allows you to create a list of workers and job titles - ie the Tania Rascia tutorial
+>>>>>>> 1868f19ea84e2eabc1839ed662f505e5d166990d
