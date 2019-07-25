@@ -1,9 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tania Rascia Tutorial
 
 This is the app where you can add people and their job titles to a web page
 
 ie this is the Tania Rascia Tutorial
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
